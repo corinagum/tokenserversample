@@ -1,0 +1,19 @@
+{
+  "name": "tokenserversample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corinagum/???.git"
+  },
+  "author": "Corina Gum, v-corgum@microsoft.com",
+  "license": "ISC",
+  "homepage": "https://tokenserversample.azurewebsites.net/",
+  "dependencies": {
+    "restify": "^8.4.0"
+  }
+}
