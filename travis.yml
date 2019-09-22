@@ -1,0 +1,15 @@
+language: node_js
+services:
+- docker
+
+node_js: "12"
+
+install:
+- docker login --username $DOCKER_USERNAME --pasword $DOCKER_PASSWORD
+- docker build -t tokenserversampleregistry.azurecr.io/tss tokenserversampleregistry.azurecr.io/tss
+
+deploy: 
+- provider: script
+  on: 
+    branch: master
+  script: docker push tokenserversampleregistry.azurecr.io/tss
