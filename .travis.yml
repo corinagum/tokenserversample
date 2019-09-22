@@ -8,7 +8,7 @@ services:
 
 install:
 - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD tokenserversampleregistry.azurecr.io
-- docker build -t tokenserversampleregistry.azurecr.io/tss tokenserversampleregistry.azurecr.io/tss
+- docker build -t tokenserversampleregistry.azurecr.io/tss .
 
 deploy: 
 - provider: script
