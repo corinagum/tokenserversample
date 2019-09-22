@@ -1,8 +1,10 @@
 language: node_js
+
+node_js: 
+- "12"
+
 services:
 - docker
-
-node_js: "12"
 
 install:
 - docker login --username $DOCKER_USERNAME --pasword $DOCKER_PASSWORD
